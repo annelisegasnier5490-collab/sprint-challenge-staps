@@ -1,0 +1,51 @@
+/* Mise en forme globale */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6; /* Un gris très clair pour le fond */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* CENTRE TOUT AU MILIEU */
+}
+
+/* Menu de navigation */
+nav {
+    width: 100%;
+    background-color: #1e3799; /* Bleu sport pro */
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Le bloc principal qui contient ton texte */
+main {
+    background-color: white;
+    width: 80%;
+    max-width: 800px;
+    margin-top: 30px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Petit effet d'ombre pour le relief */
+}
+
+h1, h2 {
+    color: #1e3799;
+    text-align: center;
+}
+
+/* Images */
+img {
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 2px solid #1e3799;
+}
