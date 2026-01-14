@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscriptions - Sprint Challenge STAPS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="evenement.html">Événement</a>
+        <a href="programme.html">Programme</a>
+        <a href="infos.html">Infos Pratiques</a>
+        <a href="inscription.html">Inscriptions</a>
+    </nav>
+
+    <main>
+        <h1>S'inscrire au Sprint Challenge</h1>
+        <p>Rejoignez-nous les 14 et 15 février pour repousser vos limites !</p>
+
+        <form action="#" method="post" enctype="multipart/form-data">
+            
+            <section>
+                <h3>Informations Personnelles</h3>
+                <p>
+                    <label for="nom">Nom et Prénom :</label><br>
+                    <input type="text" id="nom" name="nom" placeholder="Ex: Jean Dupont" required>
+                </p>
+                <p>
+                    <label for="email">Email de contact :</label><br>
+                    <input type="email" id="email" name="email" required>
+                </p>
+            </section>
+
+            <section>
+                <h3>Choix des Épreuves</h3>
+                <p>Sélectionnez la distance (plusieurs choix possibles) :</p>
+                <input type="checkbox" id="100m" name="distance" value="100m">
+                <label for="100m">100 mètres</label><br>
+                <input type="checkbox" id="200m" name="distance" value="200m">
+                <label for="200m">200 mètres</label><br>
+                <input type="checkbox" id="400m" name="distance" value="400m">
+                <label for="400m">400 mètres</label>
+            </section>
+
+            <section>
+                <h3>Niveau de performance</h3>
+                <p>
+                    <label for="temps">Temps de référence (si connu) :</label><br>
+                    <input type="text" id="temps" name="temps" placeholder="Ex: 12.50s ou 'Débutant'">
+                    <small>Cela nous permet de créer des séries de niveau équilibré.</small>
+                </p>
+            </section>
+
+            <section>
+                <h3>Justificatif Obligatoire</h3>
+                <p>
+                    <label for="certificat">Télécharger votre certificat médical (PDF ou Image) :</label><br>
+                    <input type="file" id="certificat" name="certificat" accept=".pdf, .jpg, .jpeg, .png" required>
+                </p>
+            </section>
+
+            <div style="margin-top: 20px;">
+                <button type="submit" style="padding: 10px 20px; cursor: pointer;">Valider mon inscription</button>
+            </div>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>© 2026 - Projet M2 STAPS MOS - Anne-Lise GASNIER</p>
+    </footer>
+
+</body>
+</html>
